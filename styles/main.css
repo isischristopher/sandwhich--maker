@@ -3,6 +3,34 @@
     color: white;
  }
  body {
-    background-color: rosybrown;
+    background-color: rgb(194, 50, 50);
  }
  
+ .row {
+     margin-left: 100px;
+ }
+
+ .ingredientModule {
+     margin: 40px;
+ }
+ .title{
+    /* The image used */
+    background-image: url("/pizza.jpg");
+    /*opacity: 0.4;
+  
+    /* Set a specific height */
+    height: 200px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    color: white;
+    display: flex;
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
