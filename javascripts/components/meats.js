@@ -8,8 +8,19 @@ const meats = [
     {id:"meats5", name:"Lamb", price: 70 },
 ];
 
+// RETURNS THE SELECTED MEATS 
 const getSelectedMeats = () => {
-    
+    const selectedMeats = [];
+    const meatsCheckboxes = document.getElementsByClassName('meats');
+
+    for(let j=0; j < meatsCheckboxes.length; j++){
+        for(let k=0; k < meats.length; k++){
+            if(meatsCheckboxes[j].checked && meatsCheckboxes[j].id === meats[k].id){
+                selectedMeats.push(meats[k]);
+            }
+        }
+    }
+    return selectedMeats;
 };
 
 const printMeatOptions = () => {
@@ -23,4 +34,4 @@ const printMeatOptions = () => {
     utilities.printToDom('meats-counter', domStringMeats);
 };
 
-export default { printMeatOptions };
+export default { printMeatOptions , getSelectedMeats };
