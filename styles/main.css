@@ -3,7 +3,7 @@
     color: white;
  }
  body {
-    background-color: rgb(194, 50, 50);
+    background-color: whitesmoke;
  }
  
  .row {
@@ -15,7 +15,7 @@
  }
  .title{
     /* The image used */
-    background-image: url("/pizza.jpg");
+    background-image: url("/sandwich.jpg");
     /*opacity: 0.4;
   
     /* Set a specific height */
